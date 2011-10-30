@@ -1,0 +1,23 @@
+<h1>Lista de ciudades</h1>
+
+
+
+<% @ciudads.each do |ciudad| %>
+			<div class="post">
+				<h2 class="title"><a href="#"><%= ciudad.nombre %></a></h2>
+				<div style="clear: both;">&nbsp;</div>
+				<div class="entry">
+					<%= ciudad.cod_ciudad %>
+					<%= link_to 'Show', ciudad %>
+					<%= link_to 'Edit', edit_ciudad_path(ciudad) %>
+					<%= link_to 'Destroy', ciudad, confirm: 'Are you sure?', method: :delete %>
+					<%= link_to 'New Ciudad', new_ciudad_path %>
+				</div>
+			</div>
+<% end %>
+<br />
+
+
+
+
+

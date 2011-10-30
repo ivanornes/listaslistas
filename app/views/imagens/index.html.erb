@@ -1,0 +1,25 @@
+<h1>Listing imagens</h1>
+
+<table>
+  <tr>
+    <th>Cod imagen</th>
+    <th>Url</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @imagens.each do |imagen| %>
+  <tr>
+    <td><%= imagen.cod_imagen %></td>
+    <td><%= imagen.url %></td>
+    <td><%= link_to 'Show', imagen %></td>
+    <td><%= link_to 'Edit', edit_imagen_path(imagen) %></td>
+    <td><%= link_to 'Destroy', imagen, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Imagen', new_imagen_path %>

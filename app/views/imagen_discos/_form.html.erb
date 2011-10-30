@@ -1,0 +1,25 @@
+<%= form_for(@imagen_disco) do |f| %>
+  <% if @imagen_disco.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@imagen_disco.errors.count, "error") %> prohibited this imagen_disco from being saved:</h2>
+
+      <ul>
+      <% @imagen_disco.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cod_disco %><br />
+    <%= f.number_field :cod_disco %>
+  </div>
+  <div class="field">
+    <%= f.label :cod_imagen %><br />
+    <%= f.number_field :cod_imagen %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

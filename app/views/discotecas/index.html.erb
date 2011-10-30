@@ -1,0 +1,27 @@
+<h1>Listing discotecas</h1>
+
+<table>
+  <tr>
+    <th>Cod disco</th>
+    <th>Nombre</th>
+    <th>Cod ciudad</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @discotecas.each do |discoteca| %>
+  <tr>
+    <td><%= discoteca.cod_disco %></td>
+    <td><%= discoteca.nombre %></td>
+    <td><%= discoteca.cod_ciudad %></td>
+    <td><%= link_to 'Show', discoteca %></td>
+    <td><%= link_to 'Edit', edit_discoteca_path(discoteca) %></td>
+    <td><%= link_to 'Destroy', discoteca, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Discoteca', new_discoteca_path %>

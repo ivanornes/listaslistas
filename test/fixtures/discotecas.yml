@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  cod_disco: 1
+  nombre: MyString
+  cod_ciudad: 1
+
+two:
+  cod_disco: 1
+  nombre: MyString
+  cod_ciudad: 1

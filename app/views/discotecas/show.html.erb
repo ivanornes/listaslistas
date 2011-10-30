@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Cod disco:</b>
+  <%= @discoteca.cod_disco %>
+</p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @discoteca.nombre %>
+</p>
+
+<p>
+  <b>Cod ciudad:</b>
+  <%= @discoteca.cod_ciudad %>
+</p>
+
+
+<%= link_to 'Edit', edit_discoteca_path(@discoteca) %> |
+<%= link_to 'Back', discotecas_path %>

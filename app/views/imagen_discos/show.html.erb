@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Cod disco:</b>
+  <%= @imagen_disco.cod_disco %>
+</p>
+
+<p>
+  <b>Cod imagen:</b>
+  <%= @imagen_disco.cod_imagen %>
+</p>
+
+
+<%= link_to 'Edit', edit_imagen_disco_path(@imagen_disco) %> |
+<%= link_to 'Back', imagen_discos_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  cod_zona: 1
+  nombre: MyString
+  logoN: MyString
+  logoR: MyString
+  logoW: MyString
+
+two:
+  cod_zona: 1
+  nombre: MyString
+  logoN: MyString
+  logoR: MyString
+  logoW: MyString

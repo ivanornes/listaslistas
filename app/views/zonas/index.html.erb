@@ -1,0 +1,31 @@
+<h1>Listing zonas</h1>
+
+<table>
+  <tr>
+    <th>Cod zona</th>
+    <th>Nombre</th>
+    <th>Logon</th>
+    <th>Logor</th>
+    <th>Logow</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @zonas.each do |zona| %>
+  <tr>
+    <td><%= zona.cod_zona %></td>
+    <td><%= zona.nombre %></td>
+    <td><%= zona.logoN %></td>
+    <td><%= zona.logoR %></td>
+    <td><%= zona.logoW %></td>
+    <td><%= link_to 'Show', zona %></td>
+    <td><%= link_to 'Edit', edit_zona_path(zona) %></td>
+    <td><%= link_to 'Destroy', zona, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Zona', new_zona_path %>

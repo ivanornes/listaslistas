@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Cod sala:</b>
+  <%= @sala.cod_sala %>
+</p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @sala.nombre %>
+</p>
+
+<p>
+  <b>Cod ciudad:</b>
+  <%= @sala.cod_ciudad %>
+</p>
+
+<p>
+  <b>Cod zona:</b>
+  <%= @sala.cod_zona %>
+</p>
+
+<p>
+  <b>Capacidad:</b>
+  <%= @sala.capacidad %>
+</p>
+
+<p>
+  <b>Localizacion:</b>
+  <%= @sala.localizacion %>
+</p>
+
+
+<%= link_to 'Edit', edit_sala_path(@sala) %> |
+<%= link_to 'Back', salas_path %>

@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Atmosphere 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20110923
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Listaslistas</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="stylesheets/style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#">Listaslistas </a></h1>
+			<p>Diseñado por <a href="http://www.freecsstemplates.org/">Ayalavalley</a></p>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="homes">Home</a></li>
+				<li><a href="discotecas">Discotecas</a></li>
+				<li><a href="eventos">Eventos</a></li>
+				<li><a href="#">Login</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- end #header -->
+	<div id="page">
+		<div id="content">
+			<div class="post">
+				<h2 class="title"><a href="#">Alistate! </a></h2>
+				<p class="meta"><span class="date">August 28, 2011</span><span class="posted">Posted by <a href="#">Ayalavalley</a></span></p>
+				<div style="clear: both;">&nbsp;</div>
+				<div class="entry">
+					<%= yield %>
+				</div>
+			</div>
+
+			<div style="clear: both;">&nbsp;</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				<li>
+					<div id="search" >
+						<form method="get" action="#">
+							<div>
+								<input type="text" name="s" id="search-text" value="" />
+								<input type="submit" id="search-submit" value="GO" />
+							</div>
+						</form>
+					</div>
+					<div style="clear: both;">&nbsp;</div>
+				</li>
+				<li>
+					<h2>¿Que es listaslistas?</h2>
+					<p>¿gestionas un pub, club, local o discoteca?<br>¿estas aburrido de gestionar tus listas de puerta de forma manual?<br>¿quieres dejar de hacer "listas tontas" y empezar a hacer "listas listas"?<br>¡escribenos! te ayudaremos a hacer listas como churros<br>info@listaslistas.com</p>
+				</li>
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer-content">
+	<div id="footer-bg" class="container">
+		<div id="column1">
+			<h2>Bienvenido!</h2>
+			<p>Listaslistas nace con el objetivo de agilizar y revolucionar la gestión de clientes para discotecas. Con listaslistas podras crear los eventos que se publican en la aplicación para móviles Muchanoche. En Muchanoche millones de personas veran tu evento y se podran meter en lista sin intermediarios! Entra ya en la noche de Muchanoche y listaslistas!</p>
+		</div>
+		<div id="column2">
+			<h2>Etiam rhoncus volutpat</h2>
+			<p>Sed lacus. Donec lectus. Nullam pretium nibh ut turpis. Nam bibendum. In nulla tortor, elementum vel, tempor at, varius non, purus. Mauris vitae nisl nec metus consectetuer. Donec ipsum. Proin imperdiet est. Phasellus dapibus semper urna.</p>
+		</div>
+		<div id="column3">
+			<h2>Recommended Links</h2>
+			<ul>
+				<li><a href="#">Consectetuer adipiscing elit</a></li>
+				<li><a href="#">Metus aliquam pellentesque</a></li>
+				<li><a href="#">Suspendisse iaculis mauris</a></li>
+				<li><a href="#">Urnanet non molestie semper</a></li>
+				<li><a href="#">Proin gravida orci porttitor</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<p>Copyright (c) 2011 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>

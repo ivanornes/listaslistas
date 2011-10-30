@@ -1,0 +1,29 @@
+<%= form_for(@discoteca) do |f| %>
+  <% if @discoteca.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@discoteca.errors.count, "error") %> prohibited this discoteca from being saved:</h2>
+
+      <ul>
+      <% @discoteca.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cod_disco %><br />
+    <%= f.number_field :cod_disco %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :cod_ciudad %><br />
+    <%= f.number_field :cod_ciudad %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

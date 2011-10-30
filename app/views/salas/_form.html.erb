@@ -1,0 +1,41 @@
+<%= form_for(@sala) do |f| %>
+  <% if @sala.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sala.errors.count, "error") %> prohibited this sala from being saved:</h2>
+
+      <ul>
+      <% @sala.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cod_sala %><br />
+    <%= f.number_field :cod_sala %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :cod_ciudad %><br />
+    <%= f.number_field :cod_ciudad %>
+  </div>
+  <div class="field">
+    <%= f.label :cod_zona %><br />
+    <%= f.number_field :cod_zona %>
+  </div>
+  <div class="field">
+    <%= f.label :capacidad %><br />
+    <%= f.number_field :capacidad %>
+  </div>
+  <div class="field">
+    <%= f.label :localizacion %><br />
+    <%= f.text_field :localizacion %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

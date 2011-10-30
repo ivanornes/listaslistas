@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  cod_imagen: 1
+  url: MyString
+
+two:
+  cod_imagen: 1
+  url: MyString

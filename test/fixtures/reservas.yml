@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  cod_reserva: 1
+  cod_evento: 1
+  nombre: MyString
+  acompaniantes: 1
+  contacto: MyString
+  relaciones: 1
+  origen: MyString
+  fecha: 2011-10-30
+  hora: 2011-10-30 02:10:45
+  fijo: 1
+
+two:
+  cod_reserva: 1
+  cod_evento: 1
+  nombre: MyString
+  acompaniantes: 1
+  contacto: MyString
+  relaciones: 1
+  origen: MyString
+  fecha: 2011-10-30
+  hora: 2011-10-30 02:10:45
+  fijo: 1

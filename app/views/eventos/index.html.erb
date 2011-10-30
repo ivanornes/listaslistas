@@ -1,0 +1,53 @@
+<h1>Listing eventos</h1>
+
+<table>
+  <tr>
+    <th>Cod evento</th>
+    <th>Cod disco</th>
+    <th>Nombre</th>
+    <th>Ofertas</th>
+    <th>Descripcion</th>
+    <th>Caducado</th>
+    <th>Fecha</th>
+    <th>Hora</th>
+    <th>Estilo</th>
+    <th>Reservable</th>
+    <th>Logo 1</th>
+    <th>Logo 2</th>
+    <th>Prioridad</th>
+    <th>Fechatexto</th>
+    <th>Cod sala</th>
+    <th>Logo web</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @eventos.each do |evento| %>
+  <tr>
+    <td><%= evento.cod_evento %></td>
+    <td><%= evento.cod_disco %></td>
+    <td><%= evento.nombre %></td>
+    <td><%= evento.ofertas %></td>
+    <td><%= evento.descripcion %></td>
+    <td><%= evento.caducado %></td>
+    <td><%= evento.fecha %></td>
+    <td><%= evento.hora %></td>
+    <td><%= evento.estilo %></td>
+    <td><%= evento.reservable %></td>
+    <td><%= evento.logo_1 %></td>
+    <td><%= evento.logo_2 %></td>
+    <td><%= evento.prioridad %></td>
+    <td><%= evento.fechatexto %></td>
+    <td><%= evento.cod_sala %></td>
+    <td><%= evento.logo_web %></td>
+    <td><%= link_to 'Show', evento %></td>
+    <td><%= link_to 'Edit', edit_evento_path(evento) %></td>
+    <td><%= link_to 'Destroy', evento, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Evento', new_evento_path %>

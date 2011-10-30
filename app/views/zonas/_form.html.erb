@@ -1,0 +1,37 @@
+<%= form_for(@zona) do |f| %>
+  <% if @zona.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@zona.errors.count, "error") %> prohibited this zona from being saved:</h2>
+
+      <ul>
+      <% @zona.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cod_zona %><br />
+    <%= f.number_field :cod_zona %>
+  </div>
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :logoN %><br />
+    <%= f.text_field :logoN %>
+  </div>
+  <div class="field">
+    <%= f.label :logoR %><br />
+    <%= f.text_field :logoR %>
+  </div>
+  <div class="field">
+    <%= f.label :logoW %><br />
+    <%= f.text_field :logoW %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Cod reserva:</b>
+  <%= @reserva.cod_reserva %>
+</p>
+
+<p>
+  <b>Cod evento:</b>
+  <%= @reserva.cod_evento %>
+</p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @reserva.nombre %>
+</p>
+
+<p>
+  <b>Acompaniantes:</b>
+  <%= @reserva.acompaniantes %>
+</p>
+
+<p>
+  <b>Contacto:</b>
+  <%= @reserva.contacto %>
+</p>
+
+<p>
+  <b>Relaciones:</b>
+  <%= @reserva.relaciones %>
+</p>
+
+<p>
+  <b>Origen:</b>
+  <%= @reserva.origen %>
+</p>
+
+<p>
+  <b>Fecha:</b>
+  <%= @reserva.fecha %>
+</p>
+
+<p>
+  <b>Hora:</b>
+  <%= @reserva.hora %>
+</p>
+
+<p>
+  <b>Fijo:</b>
+  <%= @reserva.fijo %>
+</p>
+
+
+<%= link_to 'Edit', edit_reserva_path(@reserva) %> |
+<%= link_to 'Back', reservas_path %>

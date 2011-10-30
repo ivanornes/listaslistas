@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  cod_evento: 1
+  cod_disco: 1
+  nombre: MyString
+  ofertas: MyString
+  descripcion: MyString
+  caducado: 1
+  fecha: 2011-10-30
+  hora: 2011-10-30 02:03:55
+  estilo: MyString
+  reservable: false
+  logo_1: MyString
+  logo_2: MyString
+  prioridad: 1
+  fechatexto: MyString
+  cod_sala: 1
+  logo_web: MyString
+
+two:
+  cod_evento: 1
+  cod_disco: 1
+  nombre: MyString
+  ofertas: MyString
+  descripcion: MyString
+  caducado: 1
+  fecha: 2011-10-30
+  hora: 2011-10-30 02:03:55
+  estilo: MyString
+  reservable: false
+  logo_1: MyString
+  logo_2: MyString
+  prioridad: 1
+  fechatexto: MyString
+  cod_sala: 1
+  logo_web: MyString
