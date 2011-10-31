@@ -19,7 +19,16 @@ Released   : 20110923
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<!-- Esto es una guarrada, pero evita el problema de que no cargue el css dependiendo de la ruta. Por mejorar-->
 <link href="stylesheets/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../stylesheets/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="../../stylesheets/style.css" rel="stylesheet" type="text/css" media="screen" />
+
+<!-- Scripts para subir imagenes-->
+<script type="text/javascript" src="javascript/jquery-pack.js"></script>
+<script type="text/javascript" src="javascript/jquery.imgareaselect.min.js"></script>
+
 </head>
 <body>
 <div id="wrapper">
@@ -33,7 +42,7 @@ Released   : 20110923
 				<li class="current_page_item"><a href="homes">Home</a></li>
 				<li><a href="discotecas">Discotecas</a></li>
 				<li><a href="eventos">Eventos</a></li>
-				<li><a href="#">Login</a></li>
+				<li><a href="login">Login</a></li>
 			</ul>
 		</div>
 	</div>
@@ -68,6 +77,14 @@ Released   : 20110923
 				<li>
 					<h2>¿Que es listaslistas?</h2>
 					<p>¿gestionas un pub, club, local o discoteca?<br>¿estas aburrido de gestionar tus listas de puerta de forma manual?<br>¿quieres dejar de hacer "listas tontas" y empezar a hacer "listas listas"?<br>¡escribenos! te ayudaremos a hacer listas como churros<br>info@listaslistas.com</p>
+				<% if session[:usuario_id] %>
+				  <br />
+				  <%= link_to 'Discotecas', discotecas_path %> <br />
+				  <%= link_to 'Eventos', eventos_path %><br />
+				  <%= link_to 'Usuarios', usuarios_path %><br />
+				  <br />
+				  <%= button_to 'Logout', logout_path, :method => :delete %>
+				<% end %>
 				</li>
 			</ul>
 		</div>

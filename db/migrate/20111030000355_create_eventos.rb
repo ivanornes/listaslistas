@@ -4,6 +4,7 @@ class CreateEventos < ActiveRecord::Migration
       t.integer :cod_evento
       t.integer :cod_disco
       t.string :nombre
+	  t.decimal :precio, :precision => 8, :scale => 2
       t.string :ofertas
       t.text :descripcion
       t.integer :caducado
@@ -17,7 +18,6 @@ class CreateEventos < ActiveRecord::Migration
       t.string :fechatexto
       t.integer :cod_sala
       t.string :logo_web
-	  t.decimal :precio, :precision => 8, :scale => 2
 
       t.timestamps
     end

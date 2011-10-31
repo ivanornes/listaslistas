@@ -1,4 +1,5 @@
 class HomesController < ApplicationController
+skip_before_filter :authorize
   # GET /homes
   # GET /homes.json
   def index
